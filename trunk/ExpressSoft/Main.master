@@ -1,0 +1,118 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+<%@ Register src="controls/Menus.ascx" tagname="Menu" tagprefix="uc1" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+   <title>PHẦN MỀM QUẢN LÝ CHUYỂN PHÁT NHANH DOVE EXPRESS</title>
+   <link href="css/StyleSheet.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<script type="text/javascript">
+    function printform(divid) {
+        var printContent = document.getElementById(divid);
+        var windowUrl = 'about:blank';
+        var uniqueName = new Date();
+        var windowName = 'Print' + uniqueName.getTime();
+        var printWindow = window.open(windowUrl, windowName, 'left=0;top=0,width=0,height=0,toolbar=0,scrollbars=0,status=0,location=0');
+
+        printWindow.document.write(printContent.innerHTML);
+        printWindow.document.close();
+        printWindow.focus();
+        printWindow.print();
+        printWindow.close();
+    }
+</script>
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<form id="form1" runat="server" >   
+<div id ="pagebody" class ="clearfix">
+<telerik:RadCodeBlock ID="RadCodeBlock" runat="server">
+           <script type="text/javascript">
+               function RowDblClick(sender, eventArgs) {
+                   sender.get_masterTableView().editItem(eventArgs.get_itemIndexHierarchical());
+               }
+           </script>
+           <script type="text/javascript">
+               function PopUpShowing(sender, eventArgs) {
+                   var popUp = eventArgs.get_popUp();
+                   var gridWidth = sender.get_element().offsetWidth;
+                   var gridHeight = sender.get_element().offsetHeight;
+                   var popUpWidth = popUp.style.width.substr(0, popUp.style.width.indexOf("px"));
+                   var popUpHeight = popUp.style.height.substr(0, popUp.style.height.indexOf("px"));
+                   popUp.style.left = ((gridWidth - popUpWidth) / 2 + sender.get_element().offsetLeft).toString() + "px";
+                   popUp.style.top = "50px";
+               }
+               function PopUpShowingSmall(sender, eventArgs) {
+                   var popUp = eventArgs.get_popUp();
+                   var gridWidth = sender.get_element().offsetWidth;
+                   var gridHeight = sender.get_element().offsetHeight;
+                   var popUpWidth = popUp.style.width.substr(0, popUp.style.width.indexOf("px"));
+                   var popUpHeight = popUp.style.height.substr(0, popUp.style.height.indexOf("px"));
+                   popUp.style.left = ((gridWidth - popUpWidth) / 2 + sender.get_element().offsetLeft).toString() + "px";
+                   popUp.style.top = "50px"; //((gridHeight - popUpHeight) / 2 + sender.get_element().offsetTop).toString() + "px";
+               }
+               function controlkeypress(source, eventArgs) {
+                   var c = eventArgs.get_keyCode();
+                   if (c == 13) {
+                       eventArgs.set_cancel(true);
+                   }
+               } 
+           </script>
+          <script type="text/javascript">
+              function onRequestStart(sender, args) {
+                  if (args.get_eventTarget().indexOf("ExportToPdfButton") >= 0 ||
+                            args.get_eventTarget().indexOf("ExportToExcelButton") >= 0 ||
+                            args.get_eventTarget().indexOf("ExportToWordButton") >= 0 ||
+                            args.get_eventTarget().indexOf("ExportToCsvButton") >= 0) {
+                      args.set_enableAjax(false);
+                  }
+              }            
+           </script>
+           <script type="text/javascript">
+               function KeyPressed(sender, eventArgs) {
+                   if (eventArgs.get_keyCode() == 46 || eventArgs.get_keyCode() == 127) {
+                eventArgs.set_cancel(true)
+              }
+            }
+           </script>
+           <script type="text/javascript">
+                function heartBeat() {
+                    $.get("KeepAlive.aspx?", function (data) {});
+                }
+                $(function () {
+                    setInterval("heartBeat()", 1000 * 30); // 38s gửi request một lần
+                });
+        </script>
+        </telerik:RadCodeBlock>       
+<div class="admin_banner clearfix">
+   <div class ="admin_header">
+           <asp:Label ID="lblFullName" runat="server" Text="Người dùng:"></asp:Label>
+   </div>
+</div>
+
+<div class ="admin_menu">
+        <telerik:RadScriptManager ID="RadScriptManager" runat="server">
+        </telerik:RadScriptManager>
+        <telerik:RadAjaxManager ID="RadAjaxManager" runat="server" 
+               UpdatePanelsRenderMode="Inline">
+        </telerik:RadAjaxManager>             
+        <uc1:Menu ID="Menu" runat="server"  />
+       <!-- admin_menu-->
+</div>
+<div class ="clearfix" style =" height:0px; clear:both; visibility:hidden;"></div>
+<div class ="admin_cms clearfix">     
+            <asp:ContentPlaceHolder id="ContentPlaceHolderMain" runat="server">
+        
+            </asp:ContentPlaceHolder>         
+</div>
+<div class ="clearfix"></div>
+<div id ="divfooterbackend">
+   <a class="a_footter" href="http://dovevn.com/">
+                 ©Copyright 2012-<%= System.DateTime.Now.Year %> Chuyển phát nhanh Bồ Câu - Dove Express.</a>
+               <br /> Hà Nội: 33 ngách 15 ngõ 167 Tây Sơn, Đống Đa - ÐT: 04.2242.4232 - Fax: 04.3533.5153 - Email: hn@dovevn.com  
+               <br /> TP.HCM: 49/3 Hậu Giang, Tân Bình - ÐT: 08. 2218.0607 - Fax: 08. 3948.7154 - Email: hcm@dovevn.com
+               <br /> Website: www.dovevn.com 
+</div>
+</div> 
+    </form>
+</body>
+</html>
