@@ -11,7 +11,7 @@
         }
     </script>
 </telerik:RadCodeBlock>
-<telerik:RadMenu ID="Menu" runat="server" Skin="Office2010Black" CssClass="cssMenuNgang"
+<telerik:RadMenu ID="Menu" runat="server" Skin="Vista" CssClass="cssMenuNgang"
     Width="99.9%" Style="position: absolute; z-index: 1">
     <CollapseAnimation Type="Linear" />
     <DefaultGroupSettings OffsetX="2" OffsetY="2" />
