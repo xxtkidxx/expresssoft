@@ -58,7 +58,7 @@
                                 </telerik:RadMenuItem>
                             </Items>
                         </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Cước quốc tế" Value="CUOCQUOCTE">
+                        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Cước quốc tế" Value="CUOCQUOCTE" Visble ="false">
                             <Items>
                                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=MABANGCUOCQT"
                                     Text="Mã bảng cước quốc tế (khách hàng)" Value="MABANGCUOCQT">
@@ -128,7 +128,7 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUI"
                     Text="Nhận gửi trong nước" Value="NHANGUI">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIQT"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIQT"  Visble ="false"
                     Text="Nhận gửi quốc tế" Value="NHANGUIQT">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIPH"
@@ -138,13 +138,13 @@
         </telerik:RadMenuItem>
         <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo" Value="BAOCAO">
             <Items>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONGAY"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONGAY" Visble ="false"
                     Text="Doanh thu theo ngày" Value="BAOCAONGAY">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOKHACHHANG"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOKHACHHANG" Visble ="false"
                     Text="Doanh thu theo khách hàng" Value="BAOCAOKHACHHANG">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONVKD"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONVKD" Visble ="false"
                     Text="Doanh thu theo nhân viên kinh doanh" Value="BAOCAONVKD">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTTTT"
@@ -153,10 +153,10 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOCONGNO"
                     Text="Quản lý công nợ" Value="BAOCAOCONGNO">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAODOITAC"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAODOITAC" Visble ="false"
                     Text="Doanh thu theo đối tác" Value="BAOCAODOITAC">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo giao nhận" Value="BAOCAOGIAONHANMENU">
+                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo giao nhận" Value="BAOCAOGIAONHANMENU" Visble ="false">
                     <Items>
                         <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONHANHANG"
                             Text="Báo cáo nhận hàng" Value="BAOCAONHANHANG">
@@ -166,7 +166,7 @@
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo tổng hợp" Value="BAOCAOTONGHOPMENU">
+                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo tổng hợp" Value="BAOCAOTONGHOPMENU" Visble ="false">
                     <Items>
                         <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTONGHOP"
                             Text="Báo cáo tổng hợp trong nước" Value="BAOCAOTONGHOP">
@@ -178,7 +178,7 @@
                 </telerik:RadMenuItem>
             </Items>
         </telerik:RadMenuItem>
-        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Tài chỉnh" Value="TAICHINH">
+        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Tài chỉnh" Value="TAICHINH" Visble ="false">
             <Items>
                 <telerik:RadMenuItem runat="server" Visible="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMAT"
                     Text="Sổ quỹ tiền mặt" Value="SOQUYTIENMAT">
