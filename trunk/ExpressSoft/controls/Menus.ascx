@@ -92,7 +92,7 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TRANGTHAIBILL"
                     Text="Trạng thái Bill" Value="TRANGTHAIBILL">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TYGIA"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TYGIA" Visble ="false"
                     Text="Tỷ giá" Value="TYGIA">
                 </telerik:RadMenuItem>
             </Items>
