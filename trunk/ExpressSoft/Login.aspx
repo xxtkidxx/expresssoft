@@ -4,7 +4,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>PHẦN MỀM QUẢN LÝ CHUYỂN PHÁT NHANH DOVE EXPRESS</title>
+    <title>PHẦN MỀM QUẢN LÝ CHUYỂN PHÁT NHANH EXPRESS SOFT</title>
     <link href="css/login.css" rel="stylesheet" type="text/css" />
     <script src="js/jquery-1.4.2.min.js" type="text/javascript"></script>
     <script src="js/jquery.corner.js" type="text/javascript"></script>
@@ -128,16 +128,8 @@
             </div>
             <div id="divfooter">
                 ©Copyright 2012-<%= System.DateTime.Now.Year %>
-            Chuyển phát nhanh Bồ Câu - Dove Express.
+            Chuyển phát nhanh - EXPRESS SOFT.
             <br />
-                Hà Nội: 33 ngách 15 ngõ 167 Tây Sơn, Đống Đa - ÐT: 04.2242.4232 - Fax: 04.3533.5153
-            - Email: hn@dovevn.com
-            <br />
-                TP.HCM: 49/3 Hậu Giang, Tân Bình - ÐT: 08. 2218.0607 - Fax: 08. 3948.7154 - Email:
-            hcm@dovevn.com
-            <br />
-                Website: www.dovevn.com
-            </div>
         </div>
     </form>
 </body>

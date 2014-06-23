@@ -13,8 +13,6 @@
 </telerik:RadCodeBlock>
 <telerik:RadMenu ID="Menu" runat="server" Skin="Vista" CssClass="cssMenuNgang"
     Width="99.9%" Style="position: absolute; z-index: 1">
-    <CollapseAnimation Type="Linear" />
-    <DefaultGroupSettings OffsetX="2" OffsetY="2" />
     <Items>
         <telerik:RadMenuItem runat="server" ImageUrl="~/images/home.png" NavigateUrl="../Default.aspx"
             Value="Home" Font-Size="Small">
@@ -33,7 +31,7 @@
                             Text="Quốc gia" Value="QUOCGIA">
                         </telerik:RadMenuItem>
                         <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=KHUVUC"
-                            Text="Khu vực" Value="KHUVUC" Visible="false">
+                            Text="Khu vực" Value="KHUVUC" Visible ="false">
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenuItem>
@@ -58,7 +56,7 @@
                                 </telerik:RadMenuItem>
                             </Items>
                         </telerik:RadMenuItem>
-                        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Cước quốc tế" Value="CUOCQUOCTE" Visble ="false">
+                        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Cước quốc tế" Value="CUOCQUOCTE" Visible ="false">
                             <Items>
                                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=MABANGCUOCQT"
                                     Text="Mã bảng cước quốc tế (khách hàng)" Value="MABANGCUOCQT">
@@ -92,8 +90,8 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TRANGTHAIBILL"
                     Text="Trạng thái Bill" Value="TRANGTHAIBILL">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TYGIA" Visble ="false"
-                    Text="Tỷ giá" Value="TYGIA">
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=TYGIA"
+                    Text="Tỷ giá" Value="TYGIA" Visible ="false">
                 </telerik:RadMenuItem>
             </Items>
         </telerik:RadMenuItem>
@@ -128,7 +126,7 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUI"
                     Text="Nhận gửi trong nước" Value="NHANGUI">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIQT"  Visble ="false"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIQT" Visible ="false"
                     Text="Nhận gửi quốc tế" Value="NHANGUIQT">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=NHANGUIPH"
@@ -138,13 +136,13 @@
         </telerik:RadMenuItem>
         <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo" Value="BAOCAO">
             <Items>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONGAY" Visble ="false"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONGAY" Visible ="false"
                     Text="Doanh thu theo ngày" Value="BAOCAONGAY">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOKHACHHANG" Visble ="false"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOKHACHHANG" Visible ="false"
                     Text="Doanh thu theo khách hàng" Value="BAOCAOKHACHHANG">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONVKD" Visble ="false"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONVKD" Visible ="false"
                     Text="Doanh thu theo nhân viên kinh doanh" Value="BAOCAONVKD">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTTTT"
@@ -153,10 +151,10 @@
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOCONGNO"
                     Text="Quản lý công nợ" Value="BAOCAOCONGNO">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAODOITAC" Visble ="false"
+                <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAODOITAC" Visible ="false"
                     Text="Doanh thu theo đối tác" Value="BAOCAODOITAC">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo giao nhận" Value="BAOCAOGIAONHANMENU" Visble ="false">
+                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo giao nhận" Value="BAOCAOGIAONHANMENU" Visible ="false">
                     <Items>
                         <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAONHANHANG"
                             Text="Báo cáo nhận hàng" Value="BAOCAONHANHANG">
@@ -166,7 +164,7 @@
                         </telerik:RadMenuItem>
                     </Items>
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo tổng hợp" Value="BAOCAOTONGHOPMENU" Visble ="false">
+                <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Báo cáo tổng hợp" Value="BAOCAOTONGHOPMENU" Visible ="false">
                     <Items>
                         <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTONGHOP"
                             Text="Báo cáo tổng hợp trong nước" Value="BAOCAOTONGHOP">
@@ -178,18 +176,18 @@
                 </telerik:RadMenuItem>
             </Items>
         </telerik:RadMenuItem>
-        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Tài chỉnh" Value="TAICHINH" Visble ="false">
+        <telerik:RadMenuItem runat="server" Font-Size="Small" Text="Tài chính" Value="TAICHINH" Visible ="false">
             <Items>
-                <telerik:RadMenuItem runat="server" Visible="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMAT"
+                <telerik:RadMenuItem runat="server" Visible ="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMAT"
                     Text="Sổ quỹ tiền mặt" Value="SOQUYTIENMAT">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Visible="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMATV2"
+                <telerik:RadMenuItem runat="server" Visible ="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMATV2"
                     Text="Sổ quỹ tiền mặt (Vesion 2)" Value="SOQUYTIENMATV2">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=SOQUYTIENMATV3"
                     Text="Sổ quỹ tiền mặt (Phân trang)" Value="SOQUYTIENMATV3">
                 </telerik:RadMenuItem>
-                <telerik:RadMenuItem runat="server" Visible="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTAICHINH"
+                <telerik:RadMenuItem runat="server" Visible ="false" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=BAOCAOTAICHINH"
                     Text="Báo cáo tài chính nội bộ" Value="BAOCAOTAICHINH">
                 </telerik:RadMenuItem>
                 <telerik:RadMenuItem runat="server" Font-Size="Small" NavigateUrl="../Default.aspx?ctl=KIHIEUTAIKHOAN"
