@@ -9,7 +9,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BillQT));
             Telerik.Reporting.ReportParameter reportParameter1 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.ReportParameter reportParameter2 = new Telerik.Reporting.ReportParameter();
             Telerik.Reporting.ReportParameter reportParameter3 = new Telerik.Reporting.ReportParameter();
@@ -139,7 +138,6 @@
             this.textBox59 = new Telerik.Reporting.TextBox();
             this.textBox60 = new Telerik.Reporting.TextBox();
             this.textBox61 = new Telerik.Reporting.TextBox();
-            this.pictureBox1 = new Telerik.Reporting.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             // 
             // detail
@@ -161,8 +159,7 @@
             this.textBox21,
             this.textBox59,
             this.textBox60,
-            this.textBox61,
-            this.pictureBox1});
+            this.textBox61});
             this.detail.Name = "detail";
             this.detail.Style.BorderColor.Default = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(92)))), ((int)(((byte)(162)))));
             this.detail.Style.BorderStyle.Default = Telerik.Reporting.Drawing.BorderType.Solid;
@@ -176,7 +173,7 @@
             | Telerik.Reporting.AnchoringStyles.Left) 
             | Telerik.Reporting.AnchoringStyles.Right)));
             this.barcode1.BarAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
-            this.barcode1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Inch(6D), Telerik.Reporting.Drawing.Unit.Inch(0.099999979138374329D));
+            this.barcode1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Cm(15.239999771118164D), Telerik.Reporting.Drawing.Unit.Cm(0.25399994850158691D));
             this.barcode1.Name = "barcode1";
             this.barcode1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(40.637981414794922D), Telerik.Reporting.Drawing.Unit.Mm(14.996625900268555D));
             this.barcode1.Stretch = true;
@@ -206,7 +203,7 @@
             this.textBox2.Style.Font.Size = Telerik.Reporting.Drawing.Unit.Point(11D);
             this.textBox2.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.textBox2.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.textBox2.Value = "CHUYỂN PHÁT NHANH BỒ CÂU - DOVEEXPRESS";
+            this.textBox2.Value = "CHUYỂN PHÁT NHANH EXPRESS SOFT";
             // 
             // panel1
             // 
@@ -1310,8 +1307,7 @@
             this.textBox21.Style.Padding.Right = Telerik.Reporting.Drawing.Unit.Point(1D);
             this.textBox21.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Left;
             this.textBox21.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
-            this.textBox21.Value = "Hà Nội: 33 Ngách 167/15 Tây Sơn, Đống Đa - 04.3533.5153; HCM: 47/4 Hậu Giang, P4." +
-    " Tân Bình - 08.6266.4455; Website: dovevn.com";
+            this.textBox21.Value = " ";
             // 
             // textBox59
             // 
@@ -1351,14 +1347,6 @@
             this.textBox61.Style.TextAlign = Telerik.Reporting.Drawing.HorizontalAlign.Center;
             this.textBox61.Style.VerticalAlign = Telerik.Reporting.Drawing.VerticalAlign.Middle;
             this.textBox61.Value = "= Parameters.C_NGAY.Value";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new Telerik.Reporting.Drawing.PointU(Telerik.Reporting.Drawing.Unit.Mm(7.62000036239624D), Telerik.Reporting.Drawing.Unit.Mm(5.0799980163574219D));
-            this.pictureBox1.MimeType = "image/png";
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new Telerik.Reporting.Drawing.SizeU(Telerik.Reporting.Drawing.Unit.Mm(38.099998474121094D), Telerik.Reporting.Drawing.Unit.Mm(12.456624031066895D));
-            this.pictureBox1.Value = ((object)(resources.GetObject("pictureBox1.Value")));
             // 
             // BillQT
             // 
@@ -1575,6 +1563,5 @@
         private Telerik.Reporting.TextBox textBox59;
         private Telerik.Reporting.TextBox textBox60;
         private Telerik.Reporting.TextBox textBox61;
-        private Telerik.Reporting.PictureBox pictureBox1;
     }
 }
