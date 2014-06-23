@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-   <title>PHẦN MỀM QUẢN LÝ CHUYỂN PHÁT NHANH DOVE EXPRESS</title>
+   <title>PHẦN MỀM QUẢN LÝ CHUYỂN PHÁT NHANH EXPRESS SOFT</title>
     <style type="text/css">			
 		html#html, body#body, form#form1, div#content, center#center
 		{	

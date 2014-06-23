@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
-    <title>CHUYỂN PHÁT NHANH DOVE EXPRESS</title>
+    <title>CHUYỂN PHÁT NHANH EXPRESS SOFT</title>
     <style type="text/css">
         body
         {
@@ -216,7 +216,7 @@
             <h1>
                 ĐỊNH VỊ TRỰC TUYẾN BƯU PHẨM
                 <br />
-                DOVE EXPRESS TRACKING</h1>
+                EXPRESS SOFT TRACKING</h1>
         </div>
         <div class="contents">
             <asp:ContentPlaceHolder ID="ContentPlaceHolderCheck" runat="server">
@@ -225,13 +225,8 @@
         <br />
         <br />
         <div class="footer2">
-            <span style="font-weight: bold">Chuyển phát nhanh Bồ Câu - Dove Express.</span>
+            <span style="font-weight: bold">Chuyển phát nhanh - EXPRESS SOFT.</span>
             <br />
-            Hà Nội: 33 ngách 15 ngõ 167 Tây Sơn, Đống Đa - ÐT: 04.3533.5153
-            <br />
-            TP.HCM: 108/6 Cộng Hoà, P4, Tân Bình - ÐT: 08.62.66.44.55
-            <br />
-            <span style="font-weight: bold">Website: www.dovevn.com</span>
         </div>
     </div>
     </form>
